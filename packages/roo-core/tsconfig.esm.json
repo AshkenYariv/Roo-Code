@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2020",
+    "outDir": "./dist-esm",
+    "declaration": false,
+    "declarationMap": false
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "dist-esm",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "tests/**/*",
+    "examples/**/*"
+  ]
+} 

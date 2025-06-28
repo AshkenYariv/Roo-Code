@@ -1,0 +1,296 @@
+src/core/tools/writeToFileTool.ts:import * as vscode from "vscode"
+src/core/tools/codebaseSearchTool.ts:import * as vscode from "vscode"
+src/core/config/CustomModesManager.ts:import * as vscode from "vscode"
+src/core/config/__tests__/CustomModesManager.yamlEdgeCases.spec.ts:import * as vscode from "vscode"
+src/core/config/__tests__/ProviderSettingsManager.spec.ts:import { ExtensionContext } from "vscode"
+src/core/config/__tests__/ContextProxy.spec.ts:import * as vscode from "vscode"
+src/core/config/__tests__/importExport.spec.ts:import * as vscode from "vscode"
+src/core/config/__tests__/CustomModesManager.spec.ts:import * as vscode from "vscode"
+src/core/config/ContextProxy.ts:import * as vscode from "vscode"
+src/core/config/importExport.ts:import * as vscode from "vscode"
+src/core/config/ProviderSettingsManager.ts:import { ExtensionContext } from "vscode"
+src/core/ignore/RooIgnoreController.ts:import * as vscode from "vscode"
+src/core/ignore/__tests__/RooIgnoreController.spec.ts:import * as vscode from "vscode"
+src/core/webview/webviewMessageHandler.ts:import * as vscode from "vscode"
+src/core/webview/webviewMessageHandler.ts:import { getVsCodeLmModels } from "../../api/providers/vscode-lm"
+src/core/webview/ClineProvider.ts:import * as vscode from "vscode"
+src/core/webview/__tests__/ClineProvider.spec.ts:import * as vscode from "vscode"
+src/core/webview/getUri.ts:import { Uri, Webview } from "vscode"
+src/core/checkpoints/index.ts:import * as vscode from "vscode"
+src/core/mentions/__tests__/index.spec.ts:import * as vscode from "vscode"
+src/core/mentions/index.ts:import * as vscode from "vscode"
+src/core/task/__tests__/Task.spec.ts:import * as vscode from "vscode"
+src/core/prompts/instructions/create-mode.ts:import * as vscode from "vscode"
+src/core/prompts/instructions/instructions.ts:import * as vscode from "vscode"
+src/core/prompts/sections/modes.ts:import * as vscode from "vscode"
+src/core/prompts/__tests__/custom-system-prompt.spec.ts:import * as vscode from "vscode"
+src/core/prompts/__tests__/add-custom-instructions.spec.ts:import * as vscode from "vscode"
+src/core/prompts/__tests__/system-prompt.spec.ts:import * as vscode from "vscode"
+src/core/prompts/__tests__/system-prompt.spec.ts:		const vscode = vi.mocked(await import("vscode")) as any
+src/core/prompts/system.ts:import * as vscode from "vscode"
+src/core/environment/getEnvironmentDetails.ts:import * as vscode from "vscode"
+src/core/context-tracking/FileContextTracker.ts:import * as vscode from "vscode"
+src/core/tools/writeToFileTool.ts:					vscode.window
+src/core/tools/writeToFileTool.ts:								vscode.env.openExternal(
+src/core/tools/writeToFileTool.ts:									vscode.Uri.parse(
+src/core/tools/codebaseSearchTool.ts:			const relativePath = vscode.workspace.asRelativePath(result.payload.filePath, false)
+src/core/config/CustomModesManager.ts:	private disposables: vscode.Disposable[] = []
+src/core/config/CustomModesManager.ts:		private readonly context: vscode.ExtensionContext,
+src/core/config/CustomModesManager.ts:		const workspaceFolders = vscode.workspace.workspaceFolders
+src/core/config/CustomModesManager.ts:				vscode.window.showErrorMessage(t("common:customModes.errors.yamlParseError", { line }))
+src/core/config/CustomModesManager.ts:					vscode.window.showErrorMessage(t("common:customModes.errors.schemaValidationError", { issues }))
+src/core/config/CustomModesManager.ts:		const settingsWatcher = vscode.workspace.createFileSystemWatcher(settingsPath)
+src/core/config/CustomModesManager.ts:					vscode.window.showErrorMessage(errorMessage)
+src/core/config/CustomModesManager.ts:					vscode.window.showErrorMessage(errorMessage)
+src/core/config/CustomModesManager.ts:		const workspaceFolders = vscode.workspace.workspaceFolders
+src/core/config/CustomModesManager.ts:			const roomodesWatcher = vscode.workspace.createFileSystemWatcher(roomodesPath)
+src/core/config/CustomModesManager.ts:				const workspaceFolders = vscode.workspace.workspaceFolders
+src/core/config/CustomModesManager.ts:			vscode.window.showErrorMessage(t("common:customModes.errors.updateFailed", { error: errorMessage }))
+src/core/config/CustomModesManager.ts:			vscode.window.showErrorMessage(t("common:customModes.errors.deleteFailed", { error: errorMessage }))
+src/core/config/CustomModesManager.ts:			vscode.window.showErrorMessage(t("common:customModes.errors.resetFailed", { error: errorMessage }))
+src/core/config/__tests__/CustomModesManager.yamlEdgeCases.spec.ts:	let mockContext: vscode.ExtensionContext
+src/core/config/__tests__/CustomModesManager.yamlEdgeCases.spec.ts:		} as unknown as vscode.ExtensionContext
+src/core/config/__tests__/CustomModesManager.yamlEdgeCases.spec.ts:		;(vscode.workspace as any).workspaceFolders = mockWorkspaceFolders
+src/core/config/__tests__/CustomModesManager.yamlEdgeCases.spec.ts:		;(vscode.workspace.onDidSaveTextDocument as Mock).mockReturnValue({ dispose: vi.fn() })
+src/core/config/__tests__/CustomModesManager.yamlEdgeCases.spec.ts:		;(vscode.workspace.createFileSystemWatcher as Mock).mockReturnValue(mockWatcher)
+src/core/config/__tests__/CustomModesManager.yamlEdgeCases.spec.ts:			expect(vscode.window.showErrorMessage).toHaveBeenCalledWith("customModes.errors.yamlParseError")
+src/core/config/__tests__/CustomModesManager.yamlEdgeCases.spec.ts:			expect(vscode.window.showErrorMessage).toHaveBeenCalledWith("customModes.errors.yamlParseError")
+src/core/config/__tests__/CustomModesManager.yamlEdgeCases.spec.ts:			expect(vscode.window.showErrorMessage).toHaveBeenCalledWith("customModes.errors.schemaValidationError")
+src/core/config/__tests__/ContextProxy.spec.ts:			extensionMode: vscode.ExtensionMode.Development,
+src/core/config/__tests__/importExport.spec.ts:	let mockExtensionContext: ReturnType<typeof vi.mocked<vscode.ExtensionContext>>
+src/core/config/__tests__/importExport.spec.ts:		} as unknown as ReturnType<typeof vi.mocked<vscode.ExtensionContext>>
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showOpenDialog as Mock).mockResolvedValue(undefined)
+src/core/config/__tests__/importExport.spec.ts:			expect(vscode.window.showOpenDialog).toHaveBeenCalledWith({
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showOpenDialog as Mock).mockResolvedValue([{ fsPath: "/mock/path/settings.json" }])
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showOpenDialog as Mock).mockResolvedValue([{ fsPath: "/mock/path/settings.json" }])
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showOpenDialog as Mock).mockResolvedValue([{ fsPath: "/mock/path/settings.json" }])
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showOpenDialog as Mock).mockResolvedValue([{ fsPath: "/mock/path/settings.json" }])
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showOpenDialog as Mock).mockResolvedValue([{ fsPath: "/mock/path/settings.json" }])
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showOpenDialog as Mock).mockResolvedValue([{ fsPath: "/mock/path/settings.json" }])
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showOpenDialog as Mock).mockResolvedValue([{ fsPath: "/mock/path/settings.json" }])
+src/core/config/__tests__/importExport.spec.ts:				vscode.Uri.file(filePath),
+src/core/config/__tests__/importExport.spec.ts:			expect(vscode.window.showOpenDialog).not.toHaveBeenCalled()
+src/core/config/__tests__/importExport.spec.ts:			const showErrorMessageSpy = vi.spyOn(vscode.window, "showErrorMessage").mockResolvedValue(undefined)
+src/core/config/__tests__/importExport.spec.ts:			expect(vscode.window.showOpenDialog).not.toHaveBeenCalled()
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showSaveDialog as Mock).mockResolvedValue(undefined)
+src/core/config/__tests__/importExport.spec.ts:			expect(vscode.window.showSaveDialog).toHaveBeenCalledWith({
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showSaveDialog as Mock).mockResolvedValue({
+src/core/config/__tests__/importExport.spec.ts:			expect(vscode.window.showSaveDialog).toHaveBeenCalledWith({
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showSaveDialog as Mock).mockResolvedValue({
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showSaveDialog as Mock).mockResolvedValue({
+src/core/config/__tests__/importExport.spec.ts:			expect(vscode.window.showSaveDialog).toHaveBeenCalled()
+src/core/config/__tests__/importExport.spec.ts:			// expect(vscode.window.showErrorMessage).not.toHaveBeenCalled();
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showSaveDialog as Mock).mockResolvedValue({
+src/core/config/__tests__/importExport.spec.ts:			expect(vscode.window.showSaveDialog).toHaveBeenCalled()
+src/core/config/__tests__/importExport.spec.ts:			;(vscode.window.showSaveDialog as Mock).mockResolvedValue(undefined)
+src/core/config/__tests__/importExport.spec.ts:			expect(vscode.window.showSaveDialog).toHaveBeenCalledWith({
+src/core/config/__tests__/importExport.spec.ts:			expect(vscode.Uri.file).toHaveBeenCalledWith(path.join("/mock/home", "Documents", "roo-code-settings.json"))
+src/core/config/__tests__/CustomModesManager.spec.ts:	let mockContext: vscode.ExtensionContext
+src/core/config/__tests__/CustomModesManager.spec.ts:		} as unknown as vscode.ExtensionContext
+src/core/config/__tests__/CustomModesManager.spec.ts:		;(vscode.workspace as any).workspaceFolders = mockWorkspaceFolders
+src/core/config/__tests__/CustomModesManager.spec.ts:		;(vscode.workspace.onDidSaveTextDocument as Mock).mockReturnValue({ dispose: vi.fn() })
+src/core/config/__tests__/CustomModesManager.spec.ts:			;(vscode.workspace as any).createFileSystemWatcher = createFileSystemWatcherMock
+src/core/config/__tests__/CustomModesManager.spec.ts:			;(vscode.window.showErrorMessage as Mock) = mockShowError
+src/core/config/ContextProxy.ts:	private readonly originalContext: vscode.ExtensionContext
+src/core/config/ContextProxy.ts:	constructor(context: vscode.ExtensionContext) {
+src/core/config/ContextProxy.ts:	static async getInstance(context: vscode.ExtensionContext) {
+src/core/config/importExport.ts:	const uris = await vscode.window.showOpenDialog({
+src/core/config/importExport.ts:	fileUri: vscode.Uri,
+src/core/config/importExport.ts:	const uri = await vscode.window.showSaveDialog({
+src/core/config/importExport.ts:		defaultUri: vscode.Uri.file(path.join(os.homedir(), "Documents", "roo-code-settings.json")),
+src/core/config/importExport.ts:			const fileUri = vscode.Uri.file(filePath)
+src/core/config/importExport.ts:		await vscode.window.showInformationMessage(t("common:info.settings_imported"))
+src/core/config/importExport.ts:		await vscode.window.showErrorMessage(t("common:errors.settings_import_failed", { error: result.error }))
+src/core/ignore/RooIgnoreController.ts:	private disposables: vscode.Disposable[] = []
+src/core/ignore/RooIgnoreController.ts:		const rooignorePattern = new vscode.RelativePattern(this.cwd, ".rooignore")
+src/core/ignore/RooIgnoreController.ts:		const fileWatcher = vscode.workspace.createFileSystemWatcher(rooignorePattern)
+src/core/ignore/__tests__/RooIgnoreController.spec.ts:		vscode.workspace.createFileSystemWatcher.mockReturnValue(mockWatcher)
+src/core/ignore/__tests__/RooIgnoreController.spec.ts:			expect(vscode.workspace.createFileSystemWatcher).toHaveBeenCalledWith(
+src/core/webview/webviewMessageHandler.ts:				vscode.window.showErrorMessage(t("common:errors.share_no_active_task"))
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showInformationMessage(t(messageKey))
+src/core/webview/webviewMessageHandler.ts:						vscode.window.showErrorMessage(t("common:errors.share_auth_required"))
+src/core/webview/webviewMessageHandler.ts:						vscode.window.showErrorMessage(t("common:errors.share_not_enabled"))
+src/core/webview/webviewMessageHandler.ts:						vscode.window.showErrorMessage(t("common:errors.share_task_not_found"))
+src/core/webview/webviewMessageHandler.ts:						vscode.window.showErrorMessage(errorMessage)
+src/core/webview/webviewMessageHandler.ts:				vscode.window.showErrorMessage(t("common:errors.share_task_failed"))
+src/core/webview/webviewMessageHandler.ts:				vscode.env.openExternal(vscode.Uri.parse(message.url))
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage(t("common:errors.checkpoint_timeout"))
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage(t("common:errors.checkpoint_failed"))
+src/core/webview/webviewMessageHandler.ts:			await vscode.workspace
+src/core/webview/webviewMessageHandler.ts:				.update("allowedCommands", validCommands, vscode.ConfigurationTarget.Global)
+src/core/webview/webviewMessageHandler.ts:			if (!vscode.workspace.workspaceFolders?.length) {
+src/core/webview/webviewMessageHandler.ts:				vscode.window.showErrorMessage(t("common:errors.no_workspace"))
+src/core/webview/webviewMessageHandler.ts:			const workspaceFolder = vscode.workspace.workspaceFolders[0]
+src/core/webview/webviewMessageHandler.ts:				vscode.window.showErrorMessage(t("mcp:errors.create_json", { error: `${error}` }))
+src/core/webview/webviewMessageHandler.ts:					await vscode.workspace.getConfiguration().update(setting, value, true)
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage(`Cannot update restricted VSCode setting: ${setting}`)
+src/core/webview/webviewMessageHandler.ts:						value: vscode.workspace.getConfiguration().get(setting),
+src/core/webview/webviewMessageHandler.ts:				vscode.window.showErrorMessage(t("common:errors.update_support_prompt"))
+src/core/webview/webviewMessageHandler.ts:			const answer = await vscode.window.showInformationMessage(
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage(t("common:errors.enhance_prompt"))
+src/core/webview/webviewMessageHandler.ts:				vscode.window.showErrorMessage(t("common:errors.get_system_prompt"))
+src/core/webview/webviewMessageHandler.ts:				await vscode.env.clipboard.writeText(systemPrompt)
+src/core/webview/webviewMessageHandler.ts:				await vscode.window.showInformationMessage(t("common:info.clipboard_copy"))
+src/core/webview/webviewMessageHandler.ts:				vscode.window.showErrorMessage(t("common:errors.get_system_prompt"))
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage(t("common:errors.search_commits"))
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage(t("common:errors.save_api_config"))
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage(t("common:errors.rename_api_config"))
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage(t("common:errors.load_api_config"))
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage(t("common:errors.load_api_config"))
+src/core/webview/webviewMessageHandler.ts:				const answer = await vscode.window.showInformationMessage(
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage(t("common:errors.delete_api_config"))
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage(t("common:errors.delete_api_config"))
+src/core/webview/webviewMessageHandler.ts:				vscode.window.showErrorMessage(t("common:errors.list_api_config"))
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage(t("common:errors.update_server_timeout"))
+src/core/webview/webviewMessageHandler.ts:				const answer = await vscode.window.showInformationMessage(
+src/core/webview/webviewMessageHandler.ts:				vscode.commands.executeCommand(getCommand("handleHumanRelayResponse"), {
+src/core/webview/webviewMessageHandler.ts:				vscode.commands.executeCommand(getCommand("handleHumanRelayResponse"), {
+src/core/webview/webviewMessageHandler.ts:				vscode.window.showErrorMessage("Sign in failed.")
+src/core/webview/webviewMessageHandler.ts:				vscode.window.showErrorMessage("Sign out failed.")
+src/core/webview/webviewMessageHandler.ts:			await vscode.commands.executeCommand(getCommand("focusPanel"))
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage("Failed to filter marketplace items")
+src/core/webview/webviewMessageHandler.ts:					vscode.window.showErrorMessage(
+src/core/webview/ClineProvider.ts:	implements vscode.WebviewViewProvider, TelemetryPropertiesProvider
+src/core/webview/ClineProvider.ts:	private disposables: vscode.Disposable[] = []
+src/core/webview/ClineProvider.ts:	private webviewDisposables: vscode.Disposable[] = []
+src/core/webview/ClineProvider.ts:	private view?: vscode.WebviewView | vscode.WebviewPanel
+src/core/webview/ClineProvider.ts:	private codeIndexStatusSubscription?: vscode.Disposable
+src/core/webview/ClineProvider.ts:		readonly context: vscode.ExtensionContext,
+src/core/webview/ClineProvider.ts:		private readonly outputChannel: vscode.OutputChannel,
+src/core/webview/ClineProvider.ts:			await vscode.commands.executeCommand(`${Package.name}.SidebarProvider.focus`)
+src/core/webview/ClineProvider.ts:				vscode.window.showErrorMessage(error.message)
+src/core/webview/ClineProvider.ts:	async resolveWebviewView(webviewView: vscode.WebviewView | vscode.WebviewPanel) {
+src/core/webview/ClineProvider.ts:			this.contextProxy.extensionMode === vscode.ExtensionMode.Development
+src/core/webview/ClineProvider.ts:		const configDisposable = vscode.workspace.onDidChangeConfiguration(async (e) => {
+src/core/webview/ClineProvider.ts:	private async getHMRHtmlContent(webview: vscode.Webview): Promise<string> {
+src/core/webview/ClineProvider.ts:			vscode.window.showErrorMessage(t("common:errors.hmr_not_running"))
+src/core/webview/ClineProvider.ts:	private getHtmlContent(webview: vscode.Webview): string {
+src/core/webview/ClineProvider.ts:	private setWebviewMessageListener(webview: vscode.Webview) {
+src/core/webview/ClineProvider.ts:			vscode.window.showErrorMessage(t("common:errors.create_api_config"))
+src/core/webview/ClineProvider.ts:				vscode.window.showWarningMessage(
+src/core/webview/ClineProvider.ts:				vscode.workspace.getConfiguration(Package.name).get<string[]>("allowedCommands") || []
+src/core/webview/ClineProvider.ts:		const machineId = vscode.env.machineId
+src/core/webview/ClineProvider.ts:			uriScheme: vscode.env.uriScheme,
+src/core/webview/ClineProvider.ts:			language: language ?? formatLanguage(vscode.env.language),
+src/core/webview/ClineProvider.ts:			language: stateValues.language ?? formatLanguage(vscode.env.language),
+src/core/webview/ClineProvider.ts:		const answer = await vscode.window.showInformationMessage(
+src/core/webview/ClineProvider.ts:			vscodeVersion: vscode.version,
+src/core/webview/ClineProvider.ts:			editorName: vscode.env.appName,
+src/core/webview/__tests__/ClineProvider.spec.ts:	let mockContext: vscode.ExtensionContext
+src/core/webview/__tests__/ClineProvider.spec.ts:	let mockOutputChannel: vscode.OutputChannel
+src/core/webview/__tests__/ClineProvider.spec.ts:	let mockWebviewView: vscode.WebviewView
+src/core/webview/__tests__/ClineProvider.spec.ts:			extensionUri: {} as vscode.Uri,
+src/core/webview/__tests__/ClineProvider.spec.ts:		} as unknown as vscode.ExtensionContext
+src/core/webview/__tests__/ClineProvider.spec.ts:		} as unknown as vscode.OutputChannel
+src/core/webview/__tests__/ClineProvider.spec.ts:		} as unknown as vscode.WebviewView
+src/core/webview/__tests__/ClineProvider.spec.ts:			{ ...mockContext, extensionMode: vscode.ExtensionMode.Development },
+src/core/webview/__tests__/ClineProvider.spec.ts:		;(vscode.env as any).language = "pt-BR"
+src/core/webview/__tests__/ClineProvider.spec.ts:		} as unknown as vscode.ExtensionContext
+src/core/webview/__tests__/ClineProvider.spec.ts:			;(vscode.window.showInformationMessage as any) = vi.fn()
+src/core/webview/__tests__/ClineProvider.spec.ts:			;(vscode.window.showInformationMessage as any).mockResolvedValue("confirmation.just_this_message")
+src/core/webview/__tests__/ClineProvider.spec.ts:			;(vscode.window.showInformationMessage as any).mockResolvedValue("confirmation.this_and_subsequent")
+src/core/webview/__tests__/ClineProvider.spec.ts:			;(vscode.window.showInformationMessage as any).mockResolvedValue("Cancel")
+src/core/webview/__tests__/ClineProvider.spec.ts:			expect(vscode.window.showErrorMessage).toHaveBeenCalledWith("errors.get_system_prompt")
+src/core/webview/__tests__/ClineProvider.spec.ts:			expect(vscode.window.showErrorMessage).toHaveBeenCalledWith("errors.create_api_config")
+src/core/webview/__tests__/ClineProvider.spec.ts:			expect(vscode.window.showErrorMessage).toHaveBeenCalledWith("errors.create_api_config")
+src/core/webview/__tests__/ClineProvider.spec.ts:	let mockContext: vscode.ExtensionContext
+src/core/webview/__tests__/ClineProvider.spec.ts:	let mockOutputChannel: vscode.OutputChannel
+src/core/webview/__tests__/ClineProvider.spec.ts:	let mockWebviewView: vscode.WebviewView
+src/core/webview/__tests__/ClineProvider.spec.ts:			extensionUri: {} as vscode.Uri,
+src/core/webview/__tests__/ClineProvider.spec.ts:		} as unknown as vscode.ExtensionContext
+src/core/webview/__tests__/ClineProvider.spec.ts:		} as unknown as vscode.OutputChannel
+src/core/webview/__tests__/ClineProvider.spec.ts:		} as unknown as vscode.WebviewView
+src/core/webview/__tests__/ClineProvider.spec.ts:		;(vscode.workspace as any).workspaceFolders = [{ uri: { fsPath: "/test/workspace" } }]
+src/core/webview/__tests__/ClineProvider.spec.ts:		;(vscode.workspace as any).workspaceFolders = []
+src/core/webview/__tests__/ClineProvider.spec.ts:		expect(vscode.window.showErrorMessage).toHaveBeenCalledWith("errors.no_workspace")
+src/core/webview/__tests__/ClineProvider.spec.ts:		;(vscode.workspace as any).workspaceFolders = [{ uri: { fsPath: "/test/workspace" } }]
+src/core/webview/__tests__/ClineProvider.spec.ts:		expect(vscode.window.showErrorMessage).toHaveBeenCalledWith(
+src/core/webview/__tests__/ClineProvider.spec.ts:	let mockContext: vscode.ExtensionContext
+src/core/webview/__tests__/ClineProvider.spec.ts:	let mockOutputChannel: vscode.OutputChannel
+src/core/webview/__tests__/ClineProvider.spec.ts:			extensionUri: {} as vscode.Uri,
+src/core/webview/__tests__/ClineProvider.spec.ts:		} as unknown as vscode.ExtensionContext
+src/core/webview/__tests__/ClineProvider.spec.ts:		mockOutputChannel = { appendLine: vi.fn() } as unknown as vscode.OutputChannel
+src/core/webview/__tests__/ClineProvider.spec.ts:	let mockContext: vscode.ExtensionContext
+src/core/webview/__tests__/ClineProvider.spec.ts:	let mockOutputChannel: vscode.OutputChannel
+src/core/webview/__tests__/ClineProvider.spec.ts:			extensionUri: {} as vscode.Uri,
+src/core/webview/__tests__/ClineProvider.spec.ts:		} as unknown as vscode.ExtensionContext
+src/core/webview/__tests__/ClineProvider.spec.ts:		mockOutputChannel = { appendLine: vi.fn() } as unknown as vscode.OutputChannel
+src/core/webview/__tests__/ClineProvider.spec.ts:	let mockContext: vscode.ExtensionContext
+src/core/webview/__tests__/ClineProvider.spec.ts:	let mockOutputChannel: vscode.OutputChannel
+src/core/webview/__tests__/ClineProvider.spec.ts:	let mockWebviewView: vscode.WebviewView
+src/core/webview/__tests__/ClineProvider.spec.ts:			extensionUri: {} as vscode.Uri,
+src/core/webview/__tests__/ClineProvider.spec.ts:		} as unknown as vscode.ExtensionContext
+src/core/webview/__tests__/ClineProvider.spec.ts:		} as unknown as vscode.OutputChannel
+src/core/webview/__tests__/ClineProvider.spec.ts:		} as unknown as vscode.WebviewView
+src/core/checkpoints/index.ts:			vscode.window.showInformationMessage("No changes found.")
+src/core/checkpoints/index.ts:		await vscode.commands.executeCommand(
+src/core/checkpoints/index.ts:			"vscode.changes",
+src/core/checkpoints/index.ts:				vscode.Uri.file(change.paths.absolute),
+src/core/checkpoints/index.ts:				vscode.Uri.parse(`${DIFF_VIEW_URI_SCHEME}:${change.paths.relative}`).with({
+src/core/checkpoints/index.ts:				vscode.Uri.parse(`${DIFF_VIEW_URI_SCHEME}:${change.paths.relative}`).with({
+src/core/mentions/__tests__/index.spec.ts:		vi.mocked(vscode.workspace.fs.stat).mockReset()
+src/core/mentions/__tests__/index.spec.ts:		vi.mocked(vscode.workspace.fs.writeFile).mockReset()
+src/core/mentions/__tests__/index.spec.ts:		vi.mocked(vscode.workspace.openTextDocument)
+src/core/mentions/__tests__/index.spec.ts:		vi.mocked(vscode.window.showTextDocument)
+src/core/mentions/__tests__/index.spec.ts:		vi.mocked(vscode.window.showErrorMessage).mockReset()
+src/core/mentions/__tests__/index.spec.ts:		vi.mocked(vscode.commands.executeCommand).mockReset()
+src/core/mentions/__tests__/index.spec.ts:		vi.mocked(vscode.env.openExternal).mockReset()
+src/core/mentions/__tests__/index.spec.ts:			const mockUri = vscode.Uri.parse(url)
+src/core/mentions/__tests__/index.spec.ts:			expect(vscode.env.openExternal).toHaveBeenCalled()
+src/core/mentions/__tests__/index.spec.ts:			const calledArg = (vscode.env.openExternal as Mock).mock.calls[0][0]
+src/core/mentions/__tests__/index.spec.ts:			expect(vscode.commands.executeCommand).not.toHaveBeenCalled()
+src/core/mentions/__tests__/index.spec.ts:			;(vscode.Uri.file as Mock).mockReturnValue(expectedUri)
+src/core/mentions/__tests__/index.spec.ts:			expect(vscode.commands.executeCommand).toHaveBeenCalledWith("revealInExplorer", expectedUri)
+src/core/mentions/__tests__/index.spec.ts:			expect(vscode.Uri.file).toHaveBeenCalledWith(expectedAbsPath)
+src/core/mentions/__tests__/index.spec.ts:			expect(vscode.commands.executeCommand).toHaveBeenCalledWith("workbench.actions.view.problems")
+src/core/mentions/__tests__/index.spec.ts:			expect(vscode.commands.executeCommand).toHaveBeenCalledWith("workbench.action.terminal.focus")
+src/core/mentions/__tests__/index.spec.ts:			expect(vscode.env.openExternal).toHaveBeenCalled() // Check if called, specific URI mock might be needed for detailed check
+src/core/mentions/__tests__/index.spec.ts:			expect(vscode.commands.executeCommand).not.toHaveBeenCalled()
+src/core/mentions/__tests__/index.spec.ts:			expect(vscode.env.openExternal).not.toHaveBeenCalled()
+src/core/mentions/__tests__/index.spec.ts:			expect(vscode.commands.executeCommand).not.toHaveBeenCalled()
+src/core/mentions/index.ts:			vscode.commands.executeCommand("revealInExplorer", vscode.Uri.file(absPath))
+src/core/mentions/index.ts:		vscode.commands.executeCommand("workbench.actions.view.problems")
+src/core/mentions/index.ts:		vscode.commands.executeCommand("workbench.action.terminal.focus")
+src/core/mentions/index.ts:		vscode.env.openExternal(vscode.Uri.parse(mention))
+src/core/mentions/index.ts:			vscode.window.showErrorMessage(`Error fetching content for ${urlMention}: ${error.message}`)
+src/core/mentions/index.ts:					vscode.window.showErrorMessage(`Error fetching content for ${mention}: ${error.message}`)
+src/core/mentions/index.ts:	const diagnostics = vscode.languages.getDiagnostics()
+src/core/mentions/index.ts:		[vscode.DiagnosticSeverity.Error, vscode.DiagnosticSeverity.Warning],
+src/core/mentions/index.ts:	const originalClipboard = await vscode.env.clipboard.readText()
+src/core/mentions/index.ts:		await vscode.commands.executeCommand("workbench.action.terminal.selectAll")
+src/core/mentions/index.ts:		await vscode.commands.executeCommand("workbench.action.terminal.copySelection")
+src/core/mentions/index.ts:		await vscode.commands.executeCommand("workbench.action.terminal.clearSelection")
+src/core/mentions/index.ts:		let terminalContents = (await vscode.env.clipboard.readText()).trim()
+src/core/mentions/index.ts:		await vscode.env.clipboard.writeText(originalClipboard)
+src/core/task/__tests__/Task.spec.ts:	let mockExtensionContext: vscode.ExtensionContext
+src/core/task/__tests__/Task.spec.ts:		} as unknown as vscode.ExtensionContext
+src/core/prompts/instructions/create-mode.ts:export async function createModeInstructions(context: vscode.ExtensionContext | undefined): Promise<string> {
+src/core/prompts/instructions/instructions.ts:	context?: vscode.ExtensionContext
+src/core/prompts/sections/modes.ts:export async function getModesSection(context: vscode.ExtensionContext): Promise<string> {
+src/core/prompts/__tests__/custom-system-prompt.spec.ts:} as unknown as vscode.ExtensionContext
+src/core/prompts/__tests__/add-custom-instructions.spec.ts:} as unknown as vscode.ExtensionContext
+src/core/prompts/__tests__/system-prompt.spec.ts:} as unknown as vscode.ExtensionContext
+src/core/prompts/__tests__/system-prompt.spec.ts:		// Mock vscode.env.language
+src/core/prompts/__tests__/system-prompt.spec.ts:		vscode.env = { language: "es" }
+src/core/prompts/__tests__/system-prompt.spec.ts:		vscode.workspace = {
+src/core/prompts/__tests__/system-prompt.spec.ts:		vscode.window = {
+src/core/prompts/__tests__/system-prompt.spec.ts:		vscode.EventEmitter = vi.fn().mockImplementation(() => ({
+src/core/prompts/__tests__/system-prompt.spec.ts:		vscode.env = { language: "en" }
+src/core/prompts/__tests__/system-prompt.spec.ts:		vscode.workspace = {
+src/core/prompts/__tests__/system-prompt.spec.ts:		vscode.window = {
+src/core/prompts/__tests__/system-prompt.spec.ts:		vscode.EventEmitter = vi.fn().mockImplementation(() => ({
+src/core/prompts/system.ts:	context: vscode.ExtensionContext,
+src/core/prompts/system.ts:${await addCustomInstructions(baseInstructions, globalCustomInstructions || "", cwd, mode, { language: language ?? formatLanguage(vscode.env.language), rooIgnoreInstructions })}`
+src/core/prompts/system.ts:	context: vscode.ExtensionContext,
+src/core/prompts/system.ts:		language: language ?? formatLanguage(vscode.env.language),
+src/core/prompts/system.ts:		shell: vscode.env.shell,
+src/core/prompts/system.ts:			{ language: language ?? formatLanguage(vscode.env.language), rooIgnoreInstructions },
+src/core/environment/getEnvironmentDetails.ts:	const visibleFilePaths = vscode.window.visibleTextEditors
+src/core/environment/getEnvironmentDetails.ts:	const openTabPaths = vscode.window.tabGroups.all
+src/core/environment/getEnvironmentDetails.ts:		.map((tab) => (tab.input as vscode.TabInputText)?.uri?.fsPath)
+src/core/environment/getEnvironmentDetails.ts:		language: language ?? formatLanguage(vscode.env.language),
+src/core/context-tracking/FileContextTracker.ts:	private fileWatchers = new Map<string, vscode.FileSystemWatcher>()
+src/core/context-tracking/FileContextTracker.ts:		const cwd = vscode.workspace.workspaceFolders?.map((folder) => folder.uri.fsPath).at(0)
+src/core/context-tracking/FileContextTracker.ts:		const fileUri = vscode.Uri.file(path.resolve(cwd, filePath))
+src/core/context-tracking/FileContextTracker.ts:		const watcher = vscode.workspace.createFileSystemWatcher(
+src/core/context-tracking/FileContextTracker.ts:			new vscode.RelativePattern(path.dirname(fileUri.fsPath), path.basename(fileUri.fsPath)),
